@@ -1,0 +1,23 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc_version = "0.8.33"
+optimizer = true
+optimizer_runs = 2000
+via_ir = false
+no_match_coverage = "(^|/)test/|(^|/)script/|(^|/)lib/|(^|/)src/factory/ClonesLib.sol$"
+
+[lint]
+exclude_lints = [
+    "asm-keccak256",
+    "mixed-case-variable",
+    "mixed-case-function",
+    "unwrapped-modifier-logic",
+    "unsafe-typecast",
+    "unaliased-plain-import",
+    "screaming-snake-case-immutable",
+    "unused-import",
+]
+
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options

@@ -1,0 +1,484 @@
+# JSON-compatible YAML.
+# Keep this file as the manual source of truth for dedicated UI coverage and prioritization.
+{
+  "contractTool": {
+    "v2CallableAll": true
+  },
+  "manualCoverage": {
+    "productUI": [
+      {
+        "match": "IAgriDistributionV1.pending(address)",
+        "reason": "Campaign rewards tab pending balance"
+      },
+      {
+        "match": "IAgriDistributionV1.claim()",
+        "reason": "Campaign rewards tab claim CTA"
+      },
+      {
+        "match": "YieldAccumulator.pending(address)",
+        "reason": "Campaign rewards tab pending balance"
+      },
+      {
+        "match": "YieldAccumulator.claim()",
+        "reason": "Campaign rewards tab claim CTA"
+      },
+      {
+        "match": "IAgriDisasterV1.campaignFlags(bytes32)",
+        "reason": "Rewards claim gating by pause flags"
+      },
+      {
+        "match": "IAgriDisasterV1.isRestricted(bytes32)",
+        "reason": "Rewards claim gating by restriction state"
+      },
+      {
+        "match": "IAgriDisasterV1.isHardFrozen(bytes32)",
+        "reason": "Rewards claim gating by hard-freeze state"
+      },
+      {
+        "match": "IAgriComplianceV1.canTransact(address)",
+        "reason": "Rewards claim compliance gating"
+      },
+      {
+        "match": "IAgriComplianceV1.canTransfer(address,address,uint256)",
+        "reason": "Compliance checker canTransfer diagnostics"
+      },
+      {
+        "match": "ComplianceModuleV1.transactStatus(address)",
+        "reason": "Compliance checker transact reason code"
+      },
+      {
+        "match": "ComplianceModuleV1.transferStatus(address,address,uint256)",
+        "reason": "Compliance checker transfer reason code"
+      },
+      {
+        "match": "ComplianceModuleV1.paused()",
+        "reason": "Compliance checker pause state"
+      },
+      {
+        "match": "ComplianceModuleV1.isDenylisted(address)",
+        "reason": "Compliance checker denylist diagnostics"
+      },
+      {
+        "match": "ComplianceModuleV1.isSanctioned(address)",
+        "reason": "Compliance checker sanctions diagnostics"
+      },
+      {
+        "match": "ComplianceModuleV1.isExempt(address)",
+        "reason": "Compliance checker exempt diagnostics"
+      },
+      {
+        "match": "ComplianceModuleV1.identityAttestation()",
+        "reason": "Compliance checker resolves identity module"
+      },
+      {
+        "match": "IdentityAttestation.nonces(address,uint32)",
+        "reason": "Onboarding EIP-712 nonce discovery"
+      },
+      {
+        "match": "IdentityAttestation.hashRegisterWithNonce(address,(uint16,uint8,uint32,uint64,uint64,uint32),uint64)",
+        "reason": "Onboarding digest preview for provider signing"
+      },
+      {
+        "match": "IdentityAttestation.isProvider(uint32,address)",
+        "reason": "Onboarding provider allowlist checks"
+      },
+      {
+        "match": "IdentityAttestation.register(address,(uint16,uint8,uint32,uint64,uint64,uint32),uint64,bytes)",
+        "reason": "Onboarding identity attestation submission"
+      },
+      {
+        "match": "IdentityAttestation.identityOf(address)",
+        "reason": "Onboarding current identity payload view"
+      },
+      {
+        "match": "IAgriDocumentRegistryV1.registerDoc(uint32,bytes32,uint64,bytes32,bytes32,bytes32,string)",
+        "reason": "Campaign docs tab register document flow"
+      },
+      {
+        "match": "IAgriTraceV1.emitTrace(bytes32,bytes32,bytes32,uint32,bytes32,uint64,uint64,string)",
+        "reason": "Campaign traceability event writer"
+      },
+      {
+        "match": "IAgriTraceV1.anchorRoot(bytes32,uint32,bytes32,uint64,uint64)",
+        "reason": "Campaign batch root anchor when trace module handles anchoring"
+      },
+      {
+        "match": "IAgriTraceV1.anchored(bytes32,uint32)",
+        "reason": "Campaign anchor stats by batch type"
+      },
+      {
+        "match": "IAgriTraceV1.getAnchor(bytes32,uint32,uint256)",
+        "reason": "Campaign latest anchor details"
+      },
+      {
+        "match": "IAgriTraceV1.isAnchored(bytes32,uint32,bytes32,uint64,uint64)",
+        "reason": "Campaign anchor verification checks"
+      },
+      {
+        "match": "IAgriDocumentRegistryV1.DocRegistered(uint32,bytes32,address,uint64,bytes32,bytes32,bytes32,string)",
+        "reason": "Campaign docs verification and timeline"
+      },
+      {
+        "match": "IAgriTraceV1.TraceEvent(bytes32,bytes32,bytes32,uint32,bytes32,address,uint64,uint64,string)",
+        "reason": "Campaign trace timeline"
+      },
+      {
+        "match": "IAgriTraceV1.BatchRootAnchored(bytes32,uint32,bytes32,uint64,uint64,address)",
+        "reason": "Campaign anchor timeline"
+      },
+      {
+        "match": "IAgriDistributionV1.Claimed(address,uint256)",
+        "reason": "Rewards tab claim history event stream"
+      },
+      {
+        "match": "YieldAccumulator.Claimed(address,uint256)",
+        "reason": "Rewards tab claim history event stream"
+      }
+    ],
+    "adminUI": [
+      {
+        "match": "FundingManager.settleDepositExactAssetsFrom(address,address,uint256,uint256,uint64,bytes32)",
+        "reason": "Admin onramp sponsored FIAT deposits"
+      },
+      {
+        "match": "FundingManager.usedSponsoredDepositRef(bytes32)",
+        "reason": "Admin onramp idempotency precheck by ref"
+      },
+      {
+        "match": "FundingManager.campaignId()",
+        "reason": "Admin onramp ref helper with campaign context"
+      },
+      {
+        "match": "FundingManager.settlementAsset()",
+        "reason": "Admin onramp amount parsing and token context"
+      },
+      {
+        "match": "FundingManager.shareToken()",
+        "reason": "Admin onramp share/compliance module discovery"
+      },
+      {
+        "match": "IAgriComplianceV1.canTransact(address)",
+        "reason": "Admin onramp beneficiary compliance precheck"
+      },
+      {
+        "match": "RoleManager.hasRole(bytes32,address)",
+        "reason": "RBAC route guard and persona resolver"
+      },
+      {
+        "match": "RoleManager.grantRole(bytes32,address)",
+        "reason": "Admin roles grant single/preset"
+      },
+      {
+        "match": "RoleManager.revokeRole(bytes32,address)",
+        "reason": "Admin roles revoke single/preset"
+      },
+      {
+        "match": "RoleManager.roleMemberCount(bytes32)",
+        "reason": "Admin roles member count"
+      },
+      {
+        "match": "RoleManager.roleMember(bytes32,uint256)",
+        "reason": "Admin roles member listing"
+      },
+      {
+        "match": "IAgriDisasterAdminV1.declareDisaster(bytes32,bytes32,uint8,bytes32,uint64)",
+        "reason": "Admin disaster declare flow with critical double confirmation"
+      },
+      {
+        "match": "IAgriDisasterAdminV1.confirmDisaster(bytes32,uint256,uint8)",
+        "reason": "Admin disaster confirm flow with critical double confirmation"
+      },
+      {
+        "match": "IAgriDisasterAdminV1.clearDisaster(bytes32)",
+        "reason": "Admin disaster clear flow with critical double confirmation"
+      },
+      {
+        "match": "IAgriDisasterAdminV1.getDisaster(bytes32)",
+        "reason": "Admin disaster status panel"
+      },
+      {
+        "match": "IAgriDisasterAdminV1.campaignFlags(bytes32)",
+        "reason": "Admin/global freeze-restrict guard checks"
+      },
+      {
+        "match": "IAgriDisasterAdminV1.isRestricted(bytes32)",
+        "reason": "Admin/global freeze-restrict guard checks"
+      },
+      {
+        "match": "IAgriDisasterAdminV1.isHardFrozen(bytes32)",
+        "reason": "Admin/global freeze-restrict guard checks"
+      },
+      {
+        "match": "IAgriDisasterAdminV1.DisasterDeclared(bytes32,bytes32,uint8,uint256,uint64,bytes32)",
+        "reason": "Admin disaster critical timeline"
+      },
+      {
+        "match": "IAgriDisasterAdminV1.DisasterConfirmed(bytes32,uint8,uint256)",
+        "reason": "Admin disaster critical timeline"
+      },
+      {
+        "match": "IAgriDisasterAdminV1.DisasterCleared(bytes32)",
+        "reason": "Admin disaster critical timeline"
+      },
+      {
+        "match": "AgriShareToken.ForcedTransfer(address,address,uint256)",
+        "reason": "Admin disaster critical timeline forced actions stream"
+      },
+      {
+        "match": "AgriShareToken.Frozen(address,uint256)",
+        "reason": "Admin disaster critical timeline freeze actions stream"
+      },
+      {
+        "match": "IAgriTraceV1.emitTrace(bytes32,bytes32,bytes32,uint32,bytes32,uint64,uint64,string)",
+        "reason": "Admin trace console emit trace"
+      },
+      {
+        "match": "IAgriTraceV1.anchorRoot(bytes32,uint32,bytes32,uint64,uint64)",
+        "reason": "Admin trace console anchor root via trace module"
+      },
+      {
+        "match": "IAgriTraceV1.anchored(bytes32,uint32)",
+        "reason": "Admin trace console anchor count by batch type"
+      },
+      {
+        "match": "IAgriTraceV1.getAnchor(bytes32,uint32,uint256)",
+        "reason": "Admin trace console latest anchor details"
+      },
+      {
+        "match": "IAgriTraceV1.isAnchored(bytes32,uint32,bytes32,uint64,uint64)",
+        "reason": "Admin trace console anchor verification"
+      },
+      {
+        "match": "BatchMerkleAnchor.anchorRoot(bytes32,uint32,bytes32,uint64,uint64)",
+        "reason": "Admin trace console dedicated batch/merkle anchor module write"
+      },
+      {
+        "match": "BatchMerkleAnchor.anchored(bytes32,uint32)",
+        "reason": "Admin trace console dedicated batch anchor counts"
+      },
+      {
+        "match": "BatchMerkleAnchor.getAnchor(bytes32,uint32,uint256)",
+        "reason": "Admin trace console dedicated batch anchor details"
+      },
+      {
+        "match": "BatchMerkleAnchor.isAnchored(bytes32,uint32,bytes32,uint64,uint64)",
+        "reason": "Admin trace console dedicated batch anchor verification"
+      },
+      {
+        "match": "IAgriDocumentRegistryV1.registerDoc(uint32,bytes32,uint64,bytes32,bytes32,bytes32,string)",
+        "reason": "Admin trace console document register"
+      },
+      {
+        "match": "IAgriDocumentRegistryV1.DocRegistered(uint32,bytes32,address,uint64,bytes32,bytes32,bytes32,string)",
+        "reason": "Admin trace console document verification and timeline"
+      },
+      {
+        "match": "IAgriTraceV1.TraceEvent(bytes32,bytes32,bytes32,uint32,bytes32,address,uint64,uint64,string)",
+        "reason": "Admin trace timeline"
+      },
+      {
+        "match": "IAgriTraceV1.BatchRootAnchored(bytes32,uint32,bytes32,uint64,uint64,address)",
+        "reason": "Admin trace timeline"
+      },
+      {
+        "match": "BatchMerkleAnchor.BatchRootAnchored(bytes32,uint32,bytes32,uint64,uint64,address)",
+        "reason": "Admin trace timeline when dedicated batch anchor module emits events"
+      },
+      {
+        "match": "YieldAccumulator.claimToWithSig(address,address,uint256,uint64,bytes32,bytes32,bytes)",
+        "reason": "Admin payouts operator execution with user EIP-712 signature"
+      },
+      {
+        "match": "YieldAccumulator.confirmPayout(bytes32,bytes32)",
+        "reason": "Admin payouts receipt confirmation by ref"
+      },
+      {
+        "match": "YieldAccumulator.payoutByRef(bytes32)",
+        "reason": "Admin payouts lookup and reconciliation table"
+      },
+      {
+        "match": "YieldAccumulator.usedPayoutRef(bytes32)",
+        "reason": "Admin payouts idempotency precheck"
+      },
+      {
+        "match": "YieldAccumulator.hashPayoutClaim(address,address,uint256,uint64,bytes32,bytes32)",
+        "reason": "User/operator payload integrity and digest checks"
+      },
+      {
+        "match": "YieldAccumulator.PayoutRequested(bytes32,address,address,uint256,bytes32,uint256)",
+        "reason": "Admin payouts reconciliation event source"
+      },
+      {
+        "match": "YieldAccumulator.PayoutConfirmed(bytes32,bytes32)",
+        "reason": "Admin payouts reconciliation confirmation event source"
+      },
+      {
+        "match": "IAgriDistributionV1.notifyReward(uint256,uint64,bytes32)",
+        "reason": "Admin liquidations notifyReward form"
+      },
+      {
+        "match": "YieldAccumulator.notifyReward(uint256,uint64,bytes32)",
+        "reason": "Admin liquidations notifyReward form"
+      },
+      {
+        "match": "YieldAccumulator.nextLiquidationId()",
+        "reason": "Admin liquidations sequential id guard"
+      },
+      {
+        "match": "YieldAccumulator.lastLiquidationId()",
+        "reason": "Admin liquidations sequence context"
+      },
+      {
+        "match": "YieldAccumulator.rewardToken()",
+        "reason": "Admin liquidations reward token context"
+      },
+      {
+        "match": "YieldAccumulator.campaignId()",
+        "reason": "Admin liquidations campaign context"
+      },
+      {
+        "match": "YieldAccumulator.RewardNotified(uint256,uint64,bytes32)",
+        "reason": "Admin liquidations history event stream"
+      },
+      {
+        "match": "*Oracle.hashAttestationWithNonce",
+        "reason": "Admin oracles digest + nonce preview for EIP-712 signing"
+      },
+      {
+        "match": "*Oracle.submitAttestation",
+        "reason": "Admin oracles publish signed attestation"
+      },
+      {
+        "match": "*Oracle.isReportValid",
+        "reason": "Admin oracles verify report validity state"
+      },
+      {
+        "match": "*Oracle.latestEpoch",
+        "reason": "Admin oracles latest epoch context"
+      },
+      {
+        "match": "*Oracle.reportHash",
+        "reason": "Admin oracles stored report hash verification"
+      },
+      {
+        "match": "*Oracle.payloadHash",
+        "reason": "Admin oracles stored payload hash verification"
+      },
+      {
+        "match": "*Oracle.reportWindow",
+        "reason": "Admin oracles report window and timestamp validation"
+      },
+      {
+        "match": "*Oracle.OracleReportSubmitted",
+        "reason": "Admin oracles campaign report listing"
+      },
+      {
+        "match": "*Oracle.AttestationSubmitted",
+        "reason": "Admin oracles signer/payload report listing"
+      }
+    ],
+    "contractTool": []
+  },
+  "priorityRules": [
+    {
+      "match": "FundingManager.requestDeposit*",
+      "priority": 100,
+      "reason": "Retail funding flows"
+    },
+    {
+      "match": "FundingManager.requestRedeem*",
+      "priority": 96,
+      "reason": "Retail redeem flows"
+    },
+    {
+      "match": "SettlementQueue.batchProcess*",
+      "priority": 95,
+      "reason": "Ops settlement core"
+    },
+    {
+      "match": "FundingManager.settleDepositExactAssetsFrom*",
+      "priority": 94,
+      "reason": "FIAT onramp sponsored deposits"
+    },
+    {
+      "match": "YieldAccumulator.claimToWithSig*",
+      "priority": 93,
+      "reason": "Off-ramp operator execution with user signature"
+    },
+    {
+      "match": "YieldAccumulator.confirmPayout*",
+      "priority": 92,
+      "reason": "Off-ramp settlement reconciliation and receipt confirmation"
+    },
+    {
+      "match": "IdentityAttestation.register*",
+      "priority": 91,
+      "reason": "Compliance onboarding attestation submission"
+    },
+    {
+      "match": "RoleManager.grantRole*",
+      "priority": 90,
+      "reason": "Governance RBAC administration"
+    },
+    {
+      "match": "RoleManager.revokeRole*",
+      "priority": 90,
+      "reason": "Governance RBAC administration"
+    },
+    {
+      "match": "IAgriDisasterAdminV1.declareDisaster*",
+      "priority": 95,
+      "reason": "Critical guardian operation"
+    },
+    {
+      "match": "IAgriDisasterAdminV1.confirmDisaster*",
+      "priority": 95,
+      "reason": "Critical guardian operation"
+    },
+    {
+      "match": "IAgriDisasterAdminV1.clearDisaster*",
+      "priority": 95,
+      "reason": "Critical guardian operation"
+    },
+    {
+      "match": "IAgriTraceV1.emitTrace*",
+      "priority": 89,
+      "reason": "Traceability event publication"
+    },
+    {
+      "match": "IAgriDocumentRegistryV1.registerDoc*",
+      "priority": 89,
+      "reason": "Document certification workflow"
+    },
+    {
+      "match": "*.anchorRoot*",
+      "priority": 87,
+      "reason": "Merkle/batch audit anchoring"
+    },
+    {
+      "match": "*.isAnchored*",
+      "priority": 86,
+      "reason": "Anchor verification checks"
+    },
+    {
+      "match": "*.notifyReward*",
+      "priority": 92,
+      "reason": "Rewards/liquidations operations"
+    },
+    {
+      "match": "*Oracle.submitAttestation*",
+      "priority": 91,
+      "reason": "Oracle report publication and attestations"
+    },
+    {
+      "match": "*Oracle.isReportValid*",
+      "priority": 88,
+      "reason": "Oracle report verification and gating"
+    },
+    {
+      "match": "*.claim*",
+      "priority": 88,
+      "reason": "User claim flows"
+    }
+  ]
+}

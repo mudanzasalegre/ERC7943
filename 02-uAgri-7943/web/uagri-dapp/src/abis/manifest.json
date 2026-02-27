@@ -1,0 +1,513 @@
+[
+  {
+    "name": "AgriCampaignRegistry",
+    "category": "contracts",
+    "sourceFolder": "AgriCampaignRegistry.sol",
+    "artifactPath": "AgriCampaignRegistry.sol/AgriCampaignRegistry.json",
+    "originalName": "AgriCampaignRegistry"
+  },
+  {
+    "name": "AgriShareToken",
+    "category": "contracts",
+    "sourceFolder": "AgriShareToken.sol",
+    "artifactPath": "AgriShareToken.sol/AgriShareToken.json",
+    "originalName": "AgriShareToken"
+  },
+  {
+    "name": "BatchMerkleAnchor",
+    "category": "contracts",
+    "sourceFolder": "BatchMerkleAnchor.sol",
+    "artifactPath": "BatchMerkleAnchor.sol/BatchMerkleAnchor.json",
+    "originalName": "BatchMerkleAnchor"
+  },
+  {
+    "name": "BridgeModule",
+    "category": "contracts",
+    "sourceFolder": "BridgeModule.sol",
+    "artifactPath": "BridgeModule.sol/BridgeModule.json",
+    "originalName": "BridgeModule"
+  },
+  {
+    "name": "CampaignFactory",
+    "category": "contracts",
+    "sourceFolder": "CampaignFactory.sol",
+    "artifactPath": "CampaignFactory.sol/CampaignFactory.json",
+    "originalName": "CampaignFactory"
+  },
+  {
+    "name": "CampaignTemplate",
+    "category": "contracts",
+    "sourceFolder": "CampaignTemplate.sol",
+    "artifactPath": "CampaignTemplate.sol/CampaignTemplate.json",
+    "originalName": "CampaignTemplate"
+  },
+  {
+    "name": "CampaignTreasury",
+    "category": "contracts",
+    "sourceFolder": "CampaignTreasury.sol",
+    "artifactPath": "CampaignTreasury.sol/CampaignTreasury.json",
+    "originalName": "CampaignTreasury"
+  },
+  {
+    "name": "ChainlinkAdapter",
+    "category": "contracts",
+    "sourceFolder": "ChainlinkAdapter.sol",
+    "artifactPath": "ChainlinkAdapter.sol/ChainlinkAdapter.json",
+    "originalName": "ChainlinkAdapter"
+  },
+  {
+    "name": "ClonesLib",
+    "category": "contracts",
+    "sourceFolder": "ClonesLib.sol",
+    "artifactPath": "ClonesLib.sol/ClonesLib.json",
+    "originalName": "ClonesLib"
+  },
+  {
+    "name": "ComplianceModuleV1",
+    "category": "contracts",
+    "sourceFolder": "ComplianceModuleV1.sol",
+    "artifactPath": "ComplianceModuleV1.sol/ComplianceModuleV1.json",
+    "originalName": "ComplianceModuleV1"
+  },
+  {
+    "name": "CustodyOracle",
+    "category": "contracts",
+    "sourceFolder": "CustodyOracle.sol",
+    "artifactPath": "CustodyOracle.sol/CustodyOracle.json",
+    "originalName": "CustodyOracle"
+  },
+  {
+    "name": "DeliveryModule",
+    "category": "contracts",
+    "sourceFolder": "DeliveryModule.sol",
+    "artifactPath": "DeliveryModule.sol/DeliveryModule.json",
+    "originalName": "DeliveryModule"
+  },
+  {
+    "name": "DisasterEvidenceOracle",
+    "category": "contracts",
+    "sourceFolder": "DisasterEvidenceOracle.sol",
+    "artifactPath": "DisasterEvidenceOracle.sol/DisasterEvidenceOracle.json",
+    "originalName": "DisasterEvidenceOracle"
+  },
+  {
+    "name": "DisasterModule",
+    "category": "contracts",
+    "sourceFolder": "DisasterModule.sol",
+    "artifactPath": "DisasterModule.sol/DisasterModule.json",
+    "originalName": "DisasterModule"
+  },
+  {
+    "name": "DocumentRegistry",
+    "category": "contracts",
+    "sourceFolder": "DocumentRegistry.sol",
+    "artifactPath": "DocumentRegistry.sol/DocumentRegistry.json",
+    "originalName": "DocumentRegistry"
+  },
+  {
+    "name": "ECDSA",
+    "category": "contracts",
+    "sourceFolder": "ECDSA.sol",
+    "artifactPath": "ECDSA.sol/ECDSA.json",
+    "originalName": "ECDSA"
+  },
+  {
+    "name": "EIP712",
+    "category": "contracts",
+    "sourceFolder": "EIP712.sol",
+    "artifactPath": "EIP712.sol/EIP712.json",
+    "originalName": "EIP712"
+  },
+  {
+    "name": "EmergencyPause",
+    "category": "contracts",
+    "sourceFolder": "EmergencyPause.sol",
+    "artifactPath": "EmergencyPause.sol/EmergencyPause.json",
+    "originalName": "EmergencyPause"
+  },
+  {
+    "name": "EUProfileEUDRCompliance",
+    "category": "contracts",
+    "sourceFolder": "EUProfileEUDRCompliance.sol",
+    "artifactPath": "EUProfileEUDRCompliance.sol/EUProfileEUDRCompliance.json",
+    "originalName": "EUProfileEUDRCompliance"
+  },
+  {
+    "name": "ForcedTransferController",
+    "category": "contracts",
+    "sourceFolder": "ForcedTransferController.sol",
+    "artifactPath": "ForcedTransferController.sol/ForcedTransferController.json",
+    "originalName": "ForcedTransferController"
+  },
+  {
+    "name": "FreezeManager",
+    "category": "contracts",
+    "sourceFolder": "FreezeManager.sol",
+    "artifactPath": "FreezeManager.sol/FreezeManager.json",
+    "originalName": "FreezeManager"
+  },
+  {
+    "name": "FundingManager",
+    "category": "contracts",
+    "sourceFolder": "FundingManager.sol",
+    "artifactPath": "FundingManager.sol/FundingManager.json",
+    "originalName": "FundingManager"
+  },
+  {
+    "name": "HarvestOracle",
+    "category": "contracts",
+    "sourceFolder": "HarvestOracle.sol",
+    "artifactPath": "HarvestOracle.sol/HarvestOracle.json",
+    "originalName": "HarvestOracle"
+  },
+  {
+    "name": "IdentityAttestation",
+    "category": "contracts",
+    "sourceFolder": "IdentityAttestation.sol",
+    "artifactPath": "IdentityAttestation.sol/IdentityAttestation.json",
+    "originalName": "IdentityAttestation"
+  },
+  {
+    "name": "InsurancePool",
+    "category": "contracts",
+    "sourceFolder": "InsurancePool.sol",
+    "artifactPath": "InsurancePool.sol/InsurancePool.json",
+    "originalName": "InsurancePool"
+  },
+  {
+    "name": "MarketplaceModule",
+    "category": "contracts",
+    "sourceFolder": "MarketplaceModule.sol",
+    "artifactPath": "MarketplaceModule.sol/MarketplaceModule.json",
+    "originalName": "MarketplaceModule"
+  },
+  {
+    "name": "OracleBaseEIP712",
+    "category": "contracts",
+    "sourceFolder": "OracleBaseEIP712.sol",
+    "artifactPath": "OracleBaseEIP712.sol/OracleBaseEIP712.json",
+    "originalName": "OracleBaseEIP712"
+  },
+  {
+    "name": "PackedUint",
+    "category": "contracts",
+    "sourceFolder": "PackedUint.sol",
+    "artifactPath": "PackedUint.sol/PackedUint.json",
+    "originalName": "PackedUint"
+  },
+  {
+    "name": "ReentrancyGuard",
+    "category": "contracts",
+    "sourceFolder": "ReentrancyGuard.sol",
+    "artifactPath": "ReentrancyGuard.sol/ReentrancyGuard.json",
+    "originalName": "ReentrancyGuard"
+  },
+  {
+    "name": "RoleManager",
+    "category": "contracts",
+    "sourceFolder": "RoleManager.sol",
+    "artifactPath": "RoleManager.sol/RoleManager.json",
+    "originalName": "RoleManager"
+  },
+  {
+    "name": "SafeERC20",
+    "category": "contracts",
+    "sourceFolder": "SafeERC20.sol",
+    "artifactPath": "SafeERC20.sol/SafeERC20.json",
+    "originalName": "SafeERC20"
+  },
+  {
+    "name": "SalesProceedsOracle",
+    "category": "contracts",
+    "sourceFolder": "SalesProceedsOracle.sol",
+    "artifactPath": "SalesProceedsOracle.sol/SalesProceedsOracle.json",
+    "originalName": "SalesProceedsOracle"
+  },
+  {
+    "name": "SettlementQueue",
+    "category": "contracts",
+    "sourceFolder": "SettlementQueue.sol",
+    "artifactPath": "SettlementQueue.sol/SettlementQueue.json",
+    "originalName": "SettlementQueue"
+  },
+  {
+    "name": "SnapshotModule",
+    "category": "contracts",
+    "sourceFolder": "SnapshotModule.sol",
+    "artifactPath": "SnapshotModule.sol/SnapshotModule.json",
+    "originalName": "SnapshotModule"
+  },
+  {
+    "name": "TraceabilityRegistry",
+    "category": "contracts",
+    "sourceFolder": "TraceabilityRegistry.sol",
+    "artifactPath": "TraceabilityRegistry.sol/TraceabilityRegistry.json",
+    "originalName": "TraceabilityRegistry"
+  },
+  {
+    "name": "TwoStepAdmin",
+    "category": "contracts",
+    "sourceFolder": "TwoStepAdmin.sol",
+    "artifactPath": "TwoStepAdmin.sol/TwoStepAdmin.json",
+    "originalName": "TwoStepAdmin"
+  },
+  {
+    "name": "UAgriErrors",
+    "category": "contracts",
+    "sourceFolder": "UAgriErrors.sol",
+    "artifactPath": "UAgriErrors.sol/UAgriErrors.json",
+    "originalName": "UAgriErrors"
+  },
+  {
+    "name": "YieldAccumulator",
+    "category": "contracts",
+    "sourceFolder": "YieldAccumulator.sol",
+    "artifactPath": "YieldAccumulator.sol/YieldAccumulator.json",
+    "originalName": "YieldAccumulator"
+  },
+  {
+    "name": "IAggregatorV3",
+    "category": "interfaces",
+    "sourceFolder": "ChainlinkAdapter.sol",
+    "artifactPath": "ChainlinkAdapter.sol/IAggregatorV3.json",
+    "originalName": "IAggregatorV3"
+  },
+  {
+    "name": "IAgriBridgeV1",
+    "category": "interfaces",
+    "sourceFolder": "IAgriBridgeV1.sol",
+    "artifactPath": "IAgriBridgeV1.sol/IAgriBridgeV1.json",
+    "originalName": "IAgriBridgeV1"
+  },
+  {
+    "name": "IAgriCampaignRegistryV1",
+    "category": "interfaces",
+    "sourceFolder": "IAgriCampaignRegistryV1.sol",
+    "artifactPath": "IAgriCampaignRegistryV1.sol/IAgriCampaignRegistryV1.json",
+    "originalName": "IAgriCampaignRegistryV1"
+  },
+  {
+    "name": "IAgriComplianceV1",
+    "category": "interfaces",
+    "sourceFolder": "IAgriComplianceV1.sol",
+    "artifactPath": "IAgriComplianceV1.sol/IAgriComplianceV1.json",
+    "originalName": "IAgriComplianceV1"
+  },
+  {
+    "name": "IAgriCustodyV1",
+    "category": "interfaces",
+    "sourceFolder": "IAgriCustodyV1.sol",
+    "artifactPath": "IAgriCustodyV1.sol/IAgriCustodyV1.json",
+    "originalName": "IAgriCustodyV1"
+  },
+  {
+    "name": "IAgriDeliveryV1",
+    "category": "interfaces",
+    "sourceFolder": "IAgriDeliveryV1.sol",
+    "artifactPath": "IAgriDeliveryV1.sol/IAgriDeliveryV1.json",
+    "originalName": "IAgriDeliveryV1"
+  },
+  {
+    "name": "IAgriDisasterAdminV1",
+    "category": "interfaces",
+    "sourceFolder": "IAgriDisasterAdminV1.sol",
+    "artifactPath": "IAgriDisasterAdminV1.sol/IAgriDisasterAdminV1.json",
+    "originalName": "IAgriDisasterAdminV1"
+  },
+  {
+    "name": "IAgriDisasterV1",
+    "category": "interfaces",
+    "sourceFolder": "IAgriDisasterV1.sol",
+    "artifactPath": "IAgriDisasterV1.sol/IAgriDisasterV1.json",
+    "originalName": "IAgriDisasterV1"
+  },
+  {
+    "name": "IAgriDistributionHooksV1",
+    "category": "interfaces",
+    "sourceFolder": "AgriShareToken.sol",
+    "artifactPath": "AgriShareToken.sol/IAgriDistributionHooksV1.json",
+    "originalName": "IAgriDistributionHooksV1"
+  },
+  {
+    "name": "IAgriDistributionV1",
+    "category": "interfaces",
+    "sourceFolder": "IAgriDistributionV1.sol",
+    "artifactPath": "IAgriDistributionV1.sol/IAgriDistributionV1.json",
+    "originalName": "IAgriDistributionV1"
+  },
+  {
+    "name": "IAgriDocumentRegistryV1",
+    "category": "interfaces",
+    "sourceFolder": "IAgriDocumentRegistryV1.sol",
+    "artifactPath": "IAgriDocumentRegistryV1.sol/IAgriDocumentRegistryV1.json",
+    "originalName": "IAgriDocumentRegistryV1"
+  },
+  {
+    "name": "IAgriForcedTransferV1",
+    "category": "interfaces",
+    "sourceFolder": "AgriShareToken.sol",
+    "artifactPath": "AgriShareToken.sol/IAgriForcedTransferV1.json",
+    "originalName": "IAgriForcedTransferV1"
+  },
+  {
+    "name": "IAgriFreezeV1",
+    "category": "interfaces",
+    "sourceFolder": "IAgriFreezeV1.sol",
+    "artifactPath": "IAgriFreezeV1.sol/IAgriFreezeV1.json",
+    "originalName": "IAgriFreezeV1"
+  },
+  {
+    "name": "IAgriIdentityAttestationV1",
+    "category": "interfaces",
+    "sourceFolder": "IAgriIdentityAttestationV1.sol",
+    "artifactPath": "IAgriIdentityAttestationV1.sol/IAgriIdentityAttestationV1.json",
+    "originalName": "IAgriIdentityAttestationV1"
+  },
+  {
+    "name": "IAgriInsuranceV1",
+    "category": "interfaces",
+    "sourceFolder": "IAgriInsuranceV1.sol",
+    "artifactPath": "IAgriInsuranceV1.sol/IAgriInsuranceV1.json",
+    "originalName": "IAgriInsuranceV1"
+  },
+  {
+    "name": "IAgriMarketplaceV1",
+    "category": "interfaces",
+    "sourceFolder": "IAgriMarketplaceV1.sol",
+    "artifactPath": "IAgriMarketplaceV1.sol/IAgriMarketplaceV1.json",
+    "originalName": "IAgriMarketplaceV1"
+  },
+  {
+    "name": "IAgriModulesV1",
+    "category": "interfaces",
+    "sourceFolder": "IAgriModulesV1.sol",
+    "artifactPath": "IAgriModulesV1.sol/IAgriModulesV1.json",
+    "originalName": "IAgriModulesV1"
+  },
+  {
+    "name": "IAgriOracleBaseV1",
+    "category": "interfaces",
+    "sourceFolder": "IAgriOracleBaseV1.sol",
+    "artifactPath": "IAgriOracleBaseV1.sol/IAgriOracleBaseV1.json",
+    "originalName": "IAgriOracleBaseV1"
+  },
+  {
+    "name": "IAgriOracleSubmitV1",
+    "category": "interfaces",
+    "sourceFolder": "IAgriOracleSubmitV1.sol",
+    "artifactPath": "IAgriOracleSubmitV1.sol/IAgriOracleSubmitV1.json",
+    "originalName": "IAgriOracleSubmitV1"
+  },
+  {
+    "name": "IAgriShareOps",
+    "category": "interfaces",
+    "sourceFolder": "FundingManager.sol",
+    "artifactPath": "FundingManager.sol/IAgriShareOps.json",
+    "originalName": "IAgriShareOps"
+  },
+  {
+    "name": "IAgriShareTokenSnapshotViews",
+    "category": "interfaces",
+    "sourceFolder": "SnapshotModule.sol",
+    "artifactPath": "SnapshotModule.sol/IAgriShareTokenSnapshotViews.json",
+    "originalName": "IAgriShareTokenSnapshotViews"
+  },
+  {
+    "name": "IAgriTraceV1",
+    "category": "interfaces",
+    "sourceFolder": "IAgriTraceV1.sol",
+    "artifactPath": "IAgriTraceV1.sol/IAgriTraceV1.json",
+    "originalName": "IAgriTraceV1"
+  },
+  {
+    "name": "IAgriTreasuryV1",
+    "category": "interfaces",
+    "sourceFolder": "IAgriTreasuryV1.sol",
+    "artifactPath": "IAgriTreasuryV1.sol/IAgriTreasuryV1.json",
+    "originalName": "IAgriTreasuryV1"
+  },
+  {
+    "name": "IERC1271__IdentityAttestation",
+    "category": "interfaces",
+    "sourceFolder": "IdentityAttestation.sol",
+    "artifactPath": "IdentityAttestation.sol/IERC1271.json",
+    "originalName": "IERC1271"
+  },
+  {
+    "name": "IERC1271__OracleBaseEIP712",
+    "category": "interfaces",
+    "sourceFolder": "OracleBaseEIP712.sol",
+    "artifactPath": "OracleBaseEIP712.sol/IERC1271.json",
+    "originalName": "IERC1271"
+  },
+  {
+    "name": "IERC1271__YieldAccumulator",
+    "category": "interfaces",
+    "sourceFolder": "YieldAccumulator.sol",
+    "artifactPath": "YieldAccumulator.sol/IERC1271.json",
+    "originalName": "IERC1271"
+  },
+  {
+    "name": "IFundingManagerQueueV1",
+    "category": "interfaces",
+    "sourceFolder": "SettlementQueue.sol",
+    "artifactPath": "SettlementQueue.sol/IFundingManagerQueueV1.json",
+    "originalName": "IFundingManagerQueueV1"
+  },
+  {
+    "name": "ISettlementQueueV1",
+    "category": "interfaces",
+    "sourceFolder": "ISettlementQueueV1.sol",
+    "artifactPath": "ISettlementQueueV1.sol/ISettlementQueueV1.json",
+    "originalName": "ISettlementQueueV1"
+  },
+  {
+    "name": "IShareTokenViews",
+    "category": "interfaces",
+    "sourceFolder": "YieldAccumulator.sol",
+    "artifactPath": "YieldAccumulator.sol/IShareTokenViews.json",
+    "originalName": "IShareTokenViews"
+  },
+  {
+    "name": "ISnapshotModuleLike",
+    "category": "interfaces",
+    "sourceFolder": "InsurancePool.sol",
+    "artifactPath": "InsurancePool.sol/ISnapshotModuleLike.json",
+    "originalName": "ISnapshotModuleLike"
+  },
+  {
+    "name": "IERC1271",
+    "category": "standards",
+    "sourceFolder": "BridgeModule.sol",
+    "artifactPath": "BridgeModule.sol/IERC1271.json",
+    "originalName": "IERC1271"
+  },
+  {
+    "name": "IERC165",
+    "category": "standards",
+    "sourceFolder": "IERC7943Fungible.sol",
+    "artifactPath": "IERC7943Fungible.sol/IERC165.json",
+    "originalName": "IERC165"
+  },
+  {
+    "name": "IERC20",
+    "category": "standards",
+    "sourceFolder": "CampaignTreasury.sol",
+    "artifactPath": "CampaignTreasury.sol/IERC20.json",
+    "originalName": "IERC20"
+  },
+  {
+    "name": "IERC20Decimals",
+    "category": "standards",
+    "sourceFolder": "FundingManager.sol",
+    "artifactPath": "FundingManager.sol/IERC20Decimals.json",
+    "originalName": "IERC20Decimals"
+  },
+  {
+    "name": "IERC7943Fungible",
+    "category": "standards",
+    "sourceFolder": "IERC7943Fungible.sol",
+    "artifactPath": "IERC7943Fungible.sol/IERC7943Fungible.json",
+    "originalName": "IERC7943Fungible"
+  }
+]

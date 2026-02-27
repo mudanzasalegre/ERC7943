@@ -1,0 +1,725 @@
+[
+  {
+    "type": "constructor",
+    "inputs": [
+      {
+        "name": "admin_",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "template_",
+        "type": "tuple",
+        "internalType": "struct CampaignTemplate.TemplateV1",
+        "components": [
+          {
+            "name": "roleManager",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "campaignRegistry",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "shareToken",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "treasury",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "fundingManager",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "settlementQueue",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "identityAttestation",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "complianceModule",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "disasterModule",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "freezeManager",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "forcedTransferController",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "traceRegistry",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "documentRegistry",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "batchMerkleAnchor",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "snapshotModule",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "yieldAccumulator",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "insurancePool",
+            "type": "address",
+            "internalType": "address"
+          }
+        ]
+      },
+      {
+        "name": "defaultGas_",
+        "type": "tuple",
+        "internalType": "struct UAgriTypes.ViewGasLimits",
+        "components": [
+          {
+            "name": "complianceGas",
+            "type": "uint32",
+            "internalType": "uint32"
+          },
+          {
+            "name": "disasterGas",
+            "type": "uint32",
+            "internalType": "uint32"
+          },
+          {
+            "name": "freezeGas",
+            "type": "uint32",
+            "internalType": "uint32"
+          },
+          {
+            "name": "custodyGas",
+            "type": "uint32",
+            "internalType": "uint32"
+          },
+          {
+            "name": "extraGas",
+            "type": "uint32",
+            "internalType": "uint32"
+          }
+        ]
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "acceptAdmin",
+    "inputs": [],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "admin",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "defaultViewGasLimits",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "complianceGas",
+        "type": "uint32",
+        "internalType": "uint32"
+      },
+      {
+        "name": "disasterGas",
+        "type": "uint32",
+        "internalType": "uint32"
+      },
+      {
+        "name": "freezeGas",
+        "type": "uint32",
+        "internalType": "uint32"
+      },
+      {
+        "name": "custodyGas",
+        "type": "uint32",
+        "internalType": "uint32"
+      },
+      {
+        "name": "extraGas",
+        "type": "uint32",
+        "internalType": "uint32"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getDefaultViewGasLimits",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "tuple",
+        "internalType": "struct UAgriTypes.ViewGasLimits",
+        "components": [
+          {
+            "name": "complianceGas",
+            "type": "uint32",
+            "internalType": "uint32"
+          },
+          {
+            "name": "disasterGas",
+            "type": "uint32",
+            "internalType": "uint32"
+          },
+          {
+            "name": "freezeGas",
+            "type": "uint32",
+            "internalType": "uint32"
+          },
+          {
+            "name": "custodyGas",
+            "type": "uint32",
+            "internalType": "uint32"
+          },
+          {
+            "name": "extraGas",
+            "type": "uint32",
+            "internalType": "uint32"
+          }
+        ]
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "getTemplateV1",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "tuple",
+        "internalType": "struct CampaignTemplate.TemplateV1",
+        "components": [
+          {
+            "name": "roleManager",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "campaignRegistry",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "shareToken",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "treasury",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "fundingManager",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "settlementQueue",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "identityAttestation",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "complianceModule",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "disasterModule",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "freezeManager",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "forcedTransferController",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "traceRegistry",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "documentRegistry",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "batchMerkleAnchor",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "snapshotModule",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "yieldAccumulator",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "insurancePool",
+            "type": "address",
+            "internalType": "address"
+          }
+        ]
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "pendingAdmin",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "renounceAdmin",
+    "inputs": [],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setDefaultViewGasLimits",
+    "inputs": [
+      {
+        "name": "limits",
+        "type": "tuple",
+        "internalType": "struct UAgriTypes.ViewGasLimits",
+        "components": [
+          {
+            "name": "complianceGas",
+            "type": "uint32",
+            "internalType": "uint32"
+          },
+          {
+            "name": "disasterGas",
+            "type": "uint32",
+            "internalType": "uint32"
+          },
+          {
+            "name": "freezeGas",
+            "type": "uint32",
+            "internalType": "uint32"
+          },
+          {
+            "name": "custodyGas",
+            "type": "uint32",
+            "internalType": "uint32"
+          },
+          {
+            "name": "extraGas",
+            "type": "uint32",
+            "internalType": "uint32"
+          }
+        ]
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setTemplate",
+    "inputs": [
+      {
+        "name": "template_",
+        "type": "tuple",
+        "internalType": "struct CampaignTemplate.TemplateV1",
+        "components": [
+          {
+            "name": "roleManager",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "campaignRegistry",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "shareToken",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "treasury",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "fundingManager",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "settlementQueue",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "identityAttestation",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "complianceModule",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "disasterModule",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "freezeManager",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "forcedTransferController",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "traceRegistry",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "documentRegistry",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "batchMerkleAnchor",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "snapshotModule",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "yieldAccumulator",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "insurancePool",
+            "type": "address",
+            "internalType": "address"
+          }
+        ]
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "transferAdmin",
+    "inputs": [
+      {
+        "name": "newAdmin",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "event",
+    "name": "AdminRenounced",
+    "inputs": [
+      {
+        "name": "previousAdmin",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "AdminTransferAccepted",
+    "inputs": [
+      {
+        "name": "previousAdmin",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "newAdmin",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "AdminTransferStarted",
+    "inputs": [
+      {
+        "name": "previousAdmin",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "newPendingAdmin",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "DefaultViewGasLimitsUpdated",
+    "inputs": [
+      {
+        "name": "limits",
+        "type": "tuple",
+        "indexed": false,
+        "internalType": "struct UAgriTypes.ViewGasLimits",
+        "components": [
+          {
+            "name": "complianceGas",
+            "type": "uint32",
+            "internalType": "uint32"
+          },
+          {
+            "name": "disasterGas",
+            "type": "uint32",
+            "internalType": "uint32"
+          },
+          {
+            "name": "freezeGas",
+            "type": "uint32",
+            "internalType": "uint32"
+          },
+          {
+            "name": "custodyGas",
+            "type": "uint32",
+            "internalType": "uint32"
+          },
+          {
+            "name": "extraGas",
+            "type": "uint32",
+            "internalType": "uint32"
+          }
+        ]
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "TemplateUpdated",
+    "inputs": [
+      {
+        "name": "template",
+        "type": "tuple",
+        "indexed": false,
+        "internalType": "struct CampaignTemplate.TemplateV1",
+        "components": [
+          {
+            "name": "roleManager",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "campaignRegistry",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "shareToken",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "treasury",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "fundingManager",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "settlementQueue",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "identityAttestation",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "complianceModule",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "disasterModule",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "freezeManager",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "forcedTransferController",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "traceRegistry",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "documentRegistry",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "batchMerkleAnchor",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "snapshotModule",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "yieldAccumulator",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "insurancePool",
+            "type": "address",
+            "internalType": "address"
+          }
+        ]
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "error",
+    "name": "CampaignTemplate__InvalidImpl",
+    "inputs": [
+      {
+        "name": "which",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "CampaignTemplate__InvalidViewGas",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "TwoStepAdmin__InvalidAddress",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "TwoStepAdmin__NoPendingAdmin",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "TwoStepAdmin__Unauthorized",
+    "inputs": []
+  }
+]

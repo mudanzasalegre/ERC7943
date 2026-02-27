@@ -1,0 +1,53 @@
+{
+  "name": "uagri-dapp",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "abi:export": "node scripts/export-abis.mjs --out ../../contracts/out --dest ./src/abis",
+    "abi:surface": "node scripts/abi-surface.mjs",
+    "abi:coverage": "node scripts/ui-coverage.mjs",
+    "abi:report": "npm run abi:surface && npm run abi:coverage",
+    "abi:check": "node scripts/abi-check.mjs",
+    "verify:onchain": "node scripts/verify-onchain-wiring.mjs",
+    "e2e:install": "playwright install chromium",
+    "e2e": "playwright test --grep @demo",
+    "e2e:onchain": "playwright test --grep @onchain --project=desktop-1024",
+    "qa:lighthouse:a11y": "node scripts/lighthouse-a11y.mjs"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.1",
+    "@radix-ui/react-toast": "^1.2.1",
+    "@rainbow-me/rainbowkit": "^2.2.0",
+    "@tanstack/react-query": "^5.59.0",
+    "autoprefixer": "^10.4.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.469.0",
+    "next": "^15.5.10",
+    "pino-pretty": "^13.0.0",
+    "postcss": "^8.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^2.5.0",
+    "tailwindcss": "^3.4.0",
+    "viem": "^2.21.0",
+    "wagmi": "^2.14.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "chrome-launcher": "^1.2.1",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^15.5.10",
+    "lighthouse": "^12.8.2",
+    "playwright": "^1.58.2",
+    "typescript": "^5.6.0"
+  }
+}

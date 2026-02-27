@@ -1,0 +1,22 @@
+[
+  {
+    "type": "error",
+    "name": "SafeERC20__BadReturnValue",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "SafeERC20__CallFailed",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "SafeERC20__InvalidAddress",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "SafeERC20__PermitFailed",
+    "inputs": []
+  }
+]

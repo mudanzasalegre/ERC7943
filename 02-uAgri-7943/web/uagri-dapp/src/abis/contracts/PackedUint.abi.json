@@ -1,0 +1,50 @@
+[
+  {
+    "type": "error",
+    "name": "PackedUint__InvalidField",
+    "inputs": [
+      {
+        "name": "offset",
+        "type": "uint8",
+        "internalType": "uint8"
+      },
+      {
+        "name": "bits",
+        "type": "uint8",
+        "internalType": "uint8"
+      }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "PackedUint__SignedOverflow",
+    "inputs": [
+      {
+        "name": "value",
+        "type": "int256",
+        "internalType": "int256"
+      },
+      {
+        "name": "bits",
+        "type": "uint8",
+        "internalType": "uint8"
+      }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "PackedUint__ValueOverflow",
+    "inputs": [
+      {
+        "name": "value",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "bits",
+        "type": "uint8",
+        "internalType": "uint8"
+      }
+    ]
+  }
+]

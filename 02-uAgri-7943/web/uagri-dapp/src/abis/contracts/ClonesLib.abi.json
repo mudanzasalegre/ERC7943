@@ -1,0 +1,12 @@
+[
+  {
+    "type": "error",
+    "name": "ClonesLib__CreateFailed",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "ClonesLib__InvalidImplementation",
+    "inputs": []
+  }
+]

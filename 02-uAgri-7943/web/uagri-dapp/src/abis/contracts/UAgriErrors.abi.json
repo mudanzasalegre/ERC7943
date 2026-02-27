@@ -1,0 +1,92 @@
+[
+  {
+    "type": "error",
+    "name": "UAgri__AlreadyProcessed",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "UAgri__BadState",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "UAgri__ComplianceDenied",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "UAgri__CustodyStale",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "UAgri__DeadlineExpired",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "UAgri__FailClosed",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "UAgri__HardFrozen",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "UAgri__InsufficientUnfrozen",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "UAgri__InvalidAddress",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "UAgri__InvalidAmount",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "UAgri__InvalidSignature",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "UAgri__OracleStale",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "UAgri__Paused",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "UAgri__Replay",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "UAgri__RequestNotCancellable",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "UAgri__RequestNotFound",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "UAgri__Restricted",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "UAgri__Unauthorized",
+    "inputs": []
+  }
+]

@@ -1,0 +1,817 @@
+[
+  {
+    "type": "constructor",
+    "inputs": [
+      {
+        "name": "admin_",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "template_",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "acceptAdmin",
+    "inputs": [],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "admin",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "beginRoleManagerAdminHandoff",
+    "inputs": [
+      {
+        "name": "campaignId",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      },
+      {
+        "name": "newAdmin",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "createCampaign",
+    "inputs": [
+      {
+        "name": "cfg",
+        "type": "tuple",
+        "internalType": "struct CampaignFactory.CampaignConfig",
+        "components": [
+          {
+            "name": "campaign",
+            "type": "tuple",
+            "internalType": "struct UAgriTypes.Campaign",
+            "components": [
+              {
+                "name": "campaignId",
+                "type": "bytes32",
+                "internalType": "bytes32"
+              },
+              {
+                "name": "plotRef",
+                "type": "bytes32",
+                "internalType": "bytes32"
+              },
+              {
+                "name": "subPlotId",
+                "type": "bytes32",
+                "internalType": "bytes32"
+              },
+              {
+                "name": "areaBps",
+                "type": "uint16",
+                "internalType": "uint16"
+              },
+              {
+                "name": "startTs",
+                "type": "uint64",
+                "internalType": "uint64"
+              },
+              {
+                "name": "endTs",
+                "type": "uint64",
+                "internalType": "uint64"
+              },
+              {
+                "name": "settlementAsset",
+                "type": "address",
+                "internalType": "address"
+              },
+              {
+                "name": "fundingCap",
+                "type": "uint256",
+                "internalType": "uint256"
+              },
+              {
+                "name": "docsRootHash",
+                "type": "bytes32",
+                "internalType": "bytes32"
+              },
+              {
+                "name": "jurisdictionProfile",
+                "type": "bytes32",
+                "internalType": "bytes32"
+              },
+              {
+                "name": "state",
+                "type": "uint8",
+                "internalType": "enum UAgriTypes.CampaignState"
+              }
+            ]
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "internalType": "string"
+          },
+          {
+            "name": "symbol",
+            "type": "string",
+            "internalType": "string"
+          },
+          {
+            "name": "decimals",
+            "type": "uint8",
+            "internalType": "uint8"
+          },
+          {
+            "name": "enforceComplianceOnPay",
+            "type": "bool",
+            "internalType": "bool"
+          },
+          {
+            "name": "depositFeeBps",
+            "type": "uint16",
+            "internalType": "uint16"
+          },
+          {
+            "name": "redeemFeeBps",
+            "type": "uint16",
+            "internalType": "uint16"
+          },
+          {
+            "name": "feeRecipient",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "allowDepositsWhenActive",
+            "type": "bool",
+            "internalType": "bool"
+          },
+          {
+            "name": "allowRedeemsDuringFunding",
+            "type": "bool",
+            "internalType": "bool"
+          },
+          {
+            "name": "enforceCustodyFreshOnRedeem",
+            "type": "bool",
+            "internalType": "bool"
+          },
+          {
+            "name": "depositExactSharesMode",
+            "type": "bool",
+            "internalType": "bool"
+          },
+          {
+            "name": "enableForcedTransfers",
+            "type": "bool",
+            "internalType": "bool"
+          },
+          {
+            "name": "enableCustodyOracle",
+            "type": "bool",
+            "internalType": "bool"
+          },
+          {
+            "name": "enableTrace",
+            "type": "bool",
+            "internalType": "bool"
+          },
+          {
+            "name": "enableDocuments",
+            "type": "bool",
+            "internalType": "bool"
+          },
+          {
+            "name": "enableBatchAnchor",
+            "type": "bool",
+            "internalType": "bool"
+          },
+          {
+            "name": "enableDistribution",
+            "type": "bool",
+            "internalType": "bool"
+          },
+          {
+            "name": "rewardToken",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "enforceComplianceOnClaim",
+            "type": "bool",
+            "internalType": "bool"
+          },
+          {
+            "name": "enableInsurance",
+            "type": "bool",
+            "internalType": "bool"
+          },
+          {
+            "name": "viewGas",
+            "type": "tuple",
+            "internalType": "struct UAgriTypes.ViewGasLimits",
+            "components": [
+              {
+                "name": "complianceGas",
+                "type": "uint32",
+                "internalType": "uint32"
+              },
+              {
+                "name": "disasterGas",
+                "type": "uint32",
+                "internalType": "uint32"
+              },
+              {
+                "name": "freezeGas",
+                "type": "uint32",
+                "internalType": "uint32"
+              },
+              {
+                "name": "custodyGas",
+                "type": "uint32",
+                "internalType": "uint32"
+              },
+              {
+                "name": "extraGas",
+                "type": "uint32",
+                "internalType": "uint32"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "roles",
+        "type": "tuple",
+        "internalType": "struct CampaignFactory.RolesConfig",
+        "components": [
+          {
+            "name": "governance",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "guardian",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "treasuryAdmin",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "complianceOfficer",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "farmOperator",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "regulatorEnforcer",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "disasterAdmin",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "oracleUpdater",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "custodyAttester",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "insuranceAdmin",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "onRampOperator",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "payoutOperator",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "rewardNotifier",
+            "type": "address",
+            "internalType": "address"
+          }
+        ]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "out",
+        "type": "tuple",
+        "internalType": "struct CampaignFactory.CampaignStack",
+        "components": [
+          {
+            "name": "roleManager",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "registry",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "shareToken",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "treasury",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "fundingManager",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "settlementQueue",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "identityAttestation",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "compliance",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "disaster",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "freezeModule",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "forcedTransferController",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "custody",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "trace",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "documentRegistry",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "batchAnchor",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "snapshot",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "distribution",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "insurance",
+            "type": "address",
+            "internalType": "address"
+          }
+        ]
+      }
+    ],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "pendingAdmin",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "renounceAdmin",
+    "inputs": [],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "setTemplate",
+    "inputs": [
+      {
+        "name": "newTemplate",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "stacks",
+    "inputs": [
+      {
+        "name": "campaignId",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ],
+    "outputs": [
+      {
+        "name": "",
+        "type": "tuple",
+        "internalType": "struct CampaignFactory.CampaignStack",
+        "components": [
+          {
+            "name": "roleManager",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "registry",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "shareToken",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "treasury",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "fundingManager",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "settlementQueue",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "identityAttestation",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "compliance",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "disaster",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "freezeModule",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "forcedTransferController",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "custody",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "trace",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "documentRegistry",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "batchAnchor",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "snapshot",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "distribution",
+            "type": "address",
+            "internalType": "address"
+          },
+          {
+            "name": "insurance",
+            "type": "address",
+            "internalType": "address"
+          }
+        ]
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "template",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "contract CampaignTemplate"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "name": "transferAdmin",
+    "inputs": [
+      {
+        "name": "newAdmin",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "event",
+    "name": "AdminRenounced",
+    "inputs": [
+      {
+        "name": "previousAdmin",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "AdminTransferAccepted",
+    "inputs": [
+      {
+        "name": "previousAdmin",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "newAdmin",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "AdminTransferStarted",
+    "inputs": [
+      {
+        "name": "previousAdmin",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "newPendingAdmin",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "CampaignDeployed",
+    "inputs": [
+      {
+        "name": "campaignId",
+        "type": "bytes32",
+        "indexed": true,
+        "internalType": "bytes32"
+      },
+      {
+        "name": "roleManager",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "shareToken",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "registry",
+        "type": "address",
+        "indexed": false,
+        "internalType": "address"
+      },
+      {
+        "name": "treasury",
+        "type": "address",
+        "indexed": false,
+        "internalType": "address"
+      },
+      {
+        "name": "fundingManager",
+        "type": "address",
+        "indexed": false,
+        "internalType": "address"
+      },
+      {
+        "name": "settlementQueue",
+        "type": "address",
+        "indexed": false,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "event",
+    "name": "TemplateUpdated",
+    "inputs": [
+      {
+        "name": "oldTemplate",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      },
+      {
+        "name": "newTemplate",
+        "type": "address",
+        "indexed": true,
+        "internalType": "address"
+      }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "error",
+    "name": "CampaignFactory__CampaignExists",
+    "inputs": [
+      {
+        "name": "campaignId",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "CampaignFactory__InvalidAddress",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CampaignFactory__InvalidCampaignId",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CampaignFactory__InvalidConfig",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CampaignFactory__InvalidFees",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CampaignFactory__InvalidRewardToken",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CampaignFactory__InvalidViewGas",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CampaignFactory__MissingTemplate",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "CampaignFactory__TemplateMissingImpl",
+    "inputs": [
+      {
+        "name": "which",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "CampaignFactory__UnknownCampaign",
+    "inputs": [
+      {
+        "name": "campaignId",
+        "type": "bytes32",
+        "internalType": "bytes32"
+      }
+    ]
+  },
+  {
+    "type": "error",
+    "name": "ClonesLib__CreateFailed",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "ClonesLib__InvalidImplementation",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "TwoStepAdmin__InvalidAddress",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "TwoStepAdmin__NoPendingAdmin",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "TwoStepAdmin__Unauthorized",
+    "inputs": []
+  }
+]
